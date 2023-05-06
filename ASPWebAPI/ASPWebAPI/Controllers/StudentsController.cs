@@ -29,7 +29,7 @@ namespace ASPWebAPI.Controllers
         public async Task<ActionResult<List<StudentDTO>>> GetStudents()
         {
             var students =  await _context.Students.ToListAsync();
-            return Ok(students.Select(Mapper.Map<StudentDTO>));
+            return Ok(students.Select(_mapper.Map<StudentDTO>));
         }
 
         // GET: api/Students/1

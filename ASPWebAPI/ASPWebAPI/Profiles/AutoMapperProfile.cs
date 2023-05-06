@@ -8,7 +8,7 @@ namespace ASPWebAPI.Profiles
     {
         public AutoMapperProfile()
         {
-            CreateMap<StudentDTO, Student>();
+            CreateMap<Student, StudentDTO>();
         }
     }
 }

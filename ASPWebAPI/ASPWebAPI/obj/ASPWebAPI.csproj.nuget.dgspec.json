@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NiteshAgarwal\\Desktop\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj": {}
+    "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NiteshAgarwal\\Desktop\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj": {
+    "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NiteshAgarwal\\Desktop\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj",
         "projectName": "ASPWebAPI",
-        "projectPath": "C:\\Users\\NiteshAgarwal\\Desktop\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj",
+        "projectPath": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\ASPWebAPI\\ASPWebAPI\\ASPWebAPI.csproj",
         "packagesPath": "C:\\Users\\NiteshAgarwal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NiteshAgarwal\\Desktop\\ASPWebAPI\\ASPWebAPI\\obj\\",
+        "outputPath": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\ASPWebAPI\\ASPWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NiteshAgarwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
