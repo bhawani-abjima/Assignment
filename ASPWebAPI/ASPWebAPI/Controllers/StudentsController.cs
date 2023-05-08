@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ASPWebAPI.Models;
 using AutoMapper;
 using ASPWebAPI.DTO;
+using ASPWebAPI.Infrastructure;
 
 namespace ASPWebAPI.Controllers
 {
@@ -16,11 +17,13 @@ namespace ASPWebAPI.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly StudentsDataContext _context;
+        private readonly IStudentRepo _repo;
         private readonly IMapper _mapper;
 
-        public StudentsController(StudentsDataContext context, IMapper mapper)
+        public StudentsController(StudentsDataContext context, IStudentRepo Repo, IMapper mapper)
         {
             _context = context;
+            _repo = Repo;
             _mapper = mapper;
         }
 
@@ -28,15 +31,23 @@ namespace ASPWebAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<List<StudentDTO>>> GetStudents()
         {
-            var students =  await _context.Students.ToListAsync();
-            return Ok(students.Select(_mapper.Map<StudentDTO>));
+            try
+            {
+                var students = _repo.GetAll();
+                return Ok(students.Select(_mapper.Map<StudentDTO>));
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
         // GET: api/Students/1
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
-            var student = await _context.Students.FindAsync(id);
+            var student =  _repo.GetByID(id);
 
             if (student == null)
             {

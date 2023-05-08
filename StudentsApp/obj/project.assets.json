@@ -10054,19 +10054,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NiteshAgarwal\\.nuget\\packages\\": {}
+    "C:\\Users\\BhawaniSingh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\StudentsApp\\StudentsApp.csproj",
+      "projectUniqueName": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\StudentsApp\\StudentsApp.csproj",
       "projectName": "StudentsApp",
-      "projectPath": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\StudentsApp\\StudentsApp.csproj",
-      "packagesPath": "C:\\Users\\NiteshAgarwal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NiteshAgarwal\\Documents\\GIT\\Assignment\\StudentsApp\\obj\\",
+      "projectPath": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\StudentsApp\\StudentsApp.csproj",
+      "packagesPath": "C:\\Users\\BhawaniSingh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\StudentsApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NiteshAgarwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BhawaniSingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10130,7 +10130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

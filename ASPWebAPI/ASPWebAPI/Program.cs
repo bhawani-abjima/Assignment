@@ -1,4 +1,6 @@
+using ASPWebAPI.Infrastructure;
 using ASPWebAPI.Models;
+using ASPWebAPI.Repository;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<StudentsDataContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("dbconn")));
 
+builder.Services.AddTransient<IStudentRepo, StudentRepo>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
