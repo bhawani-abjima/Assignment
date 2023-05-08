@@ -19,7 +19,8 @@ namespace ASPWebAPI.Repository
 
         public Student GetByID(int id)
         {
-            return _context.Students.FirstOrDefault(x => x.Id == id);
+            var student =  _context.Students.FirstOrDefault(x => x.Id == id);
+            return student;
         }
     }
 }
