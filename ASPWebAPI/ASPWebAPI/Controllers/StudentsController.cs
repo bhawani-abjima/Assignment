@@ -45,7 +45,7 @@ namespace ASPWebAPI.Controllers
 
         // GET: api/Students/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudent(int id)
+        public  ActionResult<Student> GetStudent(int id)
         {
             try
             {
