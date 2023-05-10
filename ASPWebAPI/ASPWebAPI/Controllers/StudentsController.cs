@@ -45,16 +45,24 @@ namespace ASPWebAPI.Controllers
 
         // GET: api/Students/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudent(int id)
+        public  ActionResult<Student> GetStudent(int id)
         {
-            var student =  _repo.GetByID(id);
-
-            if (student == null)
+            try
             {
-                return NotFound();
-            }
+                var student = _repo.GetByID(id);
 
-            return student;
+                if (student == null)
+                {
+                    return NotFound();
+                }
+
+                return student;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
         // PUT: api/Students/5
