@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace StduentsDetails.Models
+namespace StudentsDetails.Models
 {
     public partial class StudentDetailsContext : DbContext
     {
@@ -17,6 +17,7 @@ namespace StduentsDetails.Models
         }
 
         public virtual DbSet<StudentDatum> StudentData { get; set; } = null!;
+        public object Students { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

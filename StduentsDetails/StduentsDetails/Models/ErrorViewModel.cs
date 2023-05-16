@@ -1,4 +1,4 @@
-namespace StduentsDetails.Models
+namespace StudentsDetails.Models
 {
     public class ErrorViewModel
     {

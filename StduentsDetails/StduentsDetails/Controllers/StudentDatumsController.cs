@@ -2,28 +2,38 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using StduentsDetails.Models;
+using StudentsDetails.Entities;
+using StudentsDetails.Models;
 
-namespace StduentsDetails.Controllers
+namespace StudentsDetails.Controllers
 {
     public class StudentDatumsController : Controller
     {
         private readonly StudentDetailsContext _context;
-
-        public StudentDatumsController(StudentDetailsContext context)
+        private readonly IMapper _mapper;
+        public StudentDatumsController(StudentDetailsContext context ,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;   
         }
 
         // GET: StudentDatums
         public async Task<IActionResult> Index()
         {
-              return _context.StudentData != null ? 
-                          View(await _context.StudentData.ToListAsync()) :
-                          Problem("Entity set 'StudentDetailsContext.StudentData'  is null.");
+            var student = await _context.StudentData.ToListAsync();
+            var gk=student.Select(x=>_mapper.Map<StudentDetails>(x));
+            return View(gk);
+
+
+
+
+             // return _context.StudentData != null ? 
+                //          View(await _context.StudentData.ToListAsync()) :
+                  //        Problem("Entity set 'StudentDetailsContext.StudentData'  is null.");
         }
 
         // GET: StudentDatums/Details/5

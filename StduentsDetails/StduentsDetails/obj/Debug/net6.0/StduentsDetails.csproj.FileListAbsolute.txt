@@ -269,3 +269,5 @@ C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetail
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

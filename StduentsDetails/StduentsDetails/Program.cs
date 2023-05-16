@@ -1,13 +1,20 @@
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
-using StduentsDetails.Models;
+using StudentsDetails.Models;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+//builder.Services.AddTransient<IStudentRepo, StudentRepo>();
+
 builder.Services.AddDbContext<StudentDetailsContext>(options=> options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
 

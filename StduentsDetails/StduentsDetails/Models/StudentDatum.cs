@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StduentsDetails.Models
+namespace StudentsDetails.Models
 {
     public partial class StudentDatum
     {
