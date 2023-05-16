@@ -277,6 +277,8 @@ C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\Stu
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\StudentsApp.runtimeconfig.json
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\StudentsApp.dll
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\StudentsApp.pdb
+C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\Humanizer.dll
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\MessagePack.dll
 C:\Users\NiteshAgarwal\Documents\GIT\Assignment\StudentsApp\bin\Debug\net6.0\MessagePack.Annotations.dll

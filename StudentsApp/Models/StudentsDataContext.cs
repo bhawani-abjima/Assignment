@@ -41,14 +41,14 @@ namespace StudentsApp.Models
                 entity.Property(e => e.FamilyName)
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("family name");
+                    .HasColumnName("familyName");
 
                 entity.Property(e => e.Name)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("name");
 
-                entity.Property(e => e.RollNo).HasColumnName("roll no");
+                entity.Property(e => e.RollNo).HasColumnName("rollNo");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,18 +13,26 @@ namespace StudentsApp.Controllers
     public class StudentsController : Controller
     {
         private readonly StudentsDataContext _context;
+        private readonly IMapper _mapper;
 
-        public StudentsController(StudentsDataContext context)
+        public StudentsController(StudentsDataContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: Students
         public async Task<IActionResult> Index()
         {
-              return _context.Students != null ? 
-                          View(await _context.Students.ToListAsync()) :
-                          Problem("Entity set 'StudentsDataContext.Students'  is null.");
+            var student = await _context.Students.ToListAsync();
+            var mappeditem = student.Select(x=> _mapper.Map<StudentDTO>(x));
+            return View(mappeditem);
+
+
+
+              //return _context.Students != null ? 
+                          //View(await _context.Students.ToListAsync()) :
+                        //  Problem("Entity set 'StudentsDataContext.Students'  is null.");
         }
 
         // GET: Students/Details/5
@@ -173,4 +182,7 @@ namespace StudentsApp.Controllers
           return (_context.Students?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
+
 }
+
+//_mapper.Map<List<StudentDTO>>(student);
