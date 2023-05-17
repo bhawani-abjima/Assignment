@@ -281,3 +281,5 @@ C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetail
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\obj\Debug\net6.0\StudentsDetails.pdb
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\obj\Debug\net6.0\StudentsDetails.genruntimeconfig.cache
 C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\obj\Debug\net6.0\ref\StudentsDetails.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\CommonServiceLocator.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\StduentsDetails\StduentsDetails\bin\Debug\net6.0\Unity.ServiceLocation.dll

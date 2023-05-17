@@ -8,8 +8,8 @@ namespace StudentsDetails.Profiles
     {
         public AutoMapperProfile() 
         {
-            CreateMap<StudentDatum,StudentDetails>();
-            CreateMap<StudentDetails,StudentDatum>();
+            CreateMap<StudentDetails,StudentDetails>();
+            CreateMap<StudentDetails,StudentDetails>();
         }
     }
 }

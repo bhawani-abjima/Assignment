@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using StudentsDetails.Infrastructure;
 using StudentsDetails.Models;
 
 namespace StudentsDetails.Controllers
@@ -7,14 +8,15 @@ namespace StudentsDetails.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IStudentRepo _repo;
+        public HomeController(ILogger<HomeController> logger ,IStudentRepo Repo)
         {
             _logger = logger;
+            _repo = Repo;
         }
-
         public IActionResult Index()
         {
+
             return View();
         }
 

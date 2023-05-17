@@ -84,11 +84,11 @@
       "MessagePackAnalyzer/2.1.152": {
         "type": "package"
       },
-      "Microsoft.AspNet.Mvc/5.2.7": {
+      "Microsoft.AspNet.Mvc/5.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "[3.2.7, 3.3.0)",
-          "Microsoft.AspNet.WebPages": "[3.2.7, 3.3.0)"
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
         },
         "compile": {
           "lib/net45/System.Web.Mvc.dll": {
@@ -101,7 +101,7 @@
           }
         }
       },
-      "Microsoft.AspNet.Razor/3.2.7": {
+      "Microsoft.AspNet.Razor/3.2.3": {
         "type": "package",
         "compile": {
           "lib/net45/System.Web.Razor.dll": {
@@ -114,10 +114,10 @@
           }
         }
       },
-      "Microsoft.AspNet.WebPages/3.2.7": {
+      "Microsoft.AspNet.WebPages/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "[3.2.7, 3.3.0)",
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -3652,33 +3652,42 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Unity/5.11.1": {
+      "Unity/5.2.0": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
-        },
         "compile": {
-          "lib/netcoreapp2.0/Unity.Abstractions.dll": {
-            "related": ".pdb"
+          "lib/netcoreapp1.0/CommonServiceLocator.dll": {
+            "related": ".deps.json;.pdb"
           },
-          "lib/netcoreapp2.0/Unity.Container.dll": {
-            "related": ".pdb"
+          "lib/netcoreapp1.0/Unity.Abstractions.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp1.0/Unity.Container.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp1.0/Unity.ServiceLocation.dll": {
+            "related": ".deps.json;.pdb"
           }
         },
         "runtime": {
-          "lib/netcoreapp2.0/Unity.Abstractions.dll": {
-            "related": ".pdb"
+          "lib/netcoreapp1.0/CommonServiceLocator.dll": {
+            "related": ".deps.json;.pdb"
           },
-          "lib/netcoreapp2.0/Unity.Container.dll": {
-            "related": ".pdb"
+          "lib/netcoreapp1.0/Unity.Abstractions.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp1.0/Unity.Container.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp1.0/Unity.ServiceLocation.dll": {
+            "related": ".deps.json;.pdb"
           }
         }
       },
-      "Unity.Mvc5/1.4.0": {
+      "Unity.Mvc5/1.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Mvc": "5.2.7",
-          "Unity": "5.11.1"
+          "Microsoft.AspNet.Mvc": "5.2.3",
+          "Unity": "5.2.0"
         },
         "compile": {
           "lib/net45/Unity.Mvc5.dll": {}
@@ -3781,10 +3790,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.AspNet.Mvc/5.2.7": {
-      "sha512": "m3hUsn48k6Qb5El9A8naTwGTLCdSQKGSpGweqIfiVKltGJzAJJxuXvhhaQQtLCGg3i5V88iGjz0JG72/tlFKlg==",
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "sha512": "i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
       "type": "package",
-      "path": "microsoft.aspnet.mvc/5.2.7",
+      "path": "microsoft.aspnet.mvc/5.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3792,27 +3801,27 @@
         "Content/Web.config.uninstall.xdt",
         "lib/net45/System.Web.Mvc.dll",
         "lib/net45/System.Web.Mvc.xml",
-        "microsoft.aspnet.mvc.5.2.7.nupkg.sha512",
+        "microsoft.aspnet.mvc.5.2.3.nupkg.sha512",
         "microsoft.aspnet.mvc.nuspec"
       ]
     },
-    "Microsoft.AspNet.Razor/3.2.7": {
-      "sha512": "BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
+    "Microsoft.AspNet.Razor/3.2.3": {
+      "sha512": "leta+Q73O7+pR8ThTqXmwaNMSqwZQQ3BHfpUHd8S1XaUWe1jRVLitMHqo1AmY7wPNLyankPA1beiUKEGj8Q3Dw==",
       "type": "package",
-      "path": "microsoft.aspnet.razor/3.2.7",
+      "path": "microsoft.aspnet.razor/3.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/System.Web.Razor.dll",
         "lib/net45/System.Web.Razor.xml",
-        "microsoft.aspnet.razor.3.2.7.nupkg.sha512",
+        "microsoft.aspnet.razor.3.2.3.nupkg.sha512",
         "microsoft.aspnet.razor.nuspec"
       ]
     },
-    "Microsoft.AspNet.WebPages/3.2.7": {
-      "sha512": "2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
+    "Microsoft.AspNet.WebPages/3.2.3": {
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
       "type": "package",
-      "path": "microsoft.aspnet.webpages/3.2.7",
+      "path": "microsoft.aspnet.webpages/3.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3826,7 +3835,7 @@
         "lib/net45/System.Web.WebPages.Razor.xml",
         "lib/net45/System.Web.WebPages.dll",
         "lib/net45/System.Web.WebPages.xml",
-        "microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
+        "microsoft.aspnet.webpages.3.2.3.nupkg.sha512",
         "microsoft.aspnet.webpages.nuspec"
       ]
     },
@@ -10283,53 +10292,93 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Unity/5.11.1": {
-      "sha512": "4LroMtZWLwc2krUsH8IX62fxNoOKb1463wHdtu617iVAOkMaFZ4e4kp6VR7tBi20jxvezlRbknWoeCXWg903yg==",
+    "Unity/5.2.0": {
+      "sha512": "mgUJt3wQ0SApgR0Q7c67Xha8NaXiY2tq5yJKapJNV1JxksE4yi9VVvQWtnyuGQxn9P21M93aDcwgqbTGKuN0dQ==",
       "type": "package",
-      "path": "unity/5.11.1",
+      "path": "unity/5.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net40/CommonServiceLocator.pdb",
         "lib/net40/Unity.Abstractions.dll",
         "lib/net40/Unity.Abstractions.pdb",
         "lib/net40/Unity.Container.dll",
         "lib/net40/Unity.Container.pdb",
+        "lib/net40/Unity.Interception.dll",
+        "lib/net40/Unity.Interception.pdb",
+        "lib/net40/Unity.ServiceLocation.dll",
+        "lib/net40/Unity.ServiceLocation.pdb",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.pdb",
         "lib/net45/Unity.Abstractions.dll",
         "lib/net45/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Configuration.dll",
+        "lib/net45/Unity.Configuration.pdb",
         "lib/net45/Unity.Container.dll",
         "lib/net45/Unity.Container.pdb",
-        "lib/net46/Unity.Abstractions.dll",
-        "lib/net46/Unity.Abstractions.pdb",
-        "lib/net46/Unity.Container.dll",
-        "lib/net46/Unity.Container.pdb",
+        "lib/net45/Unity.Interception.Configuration.dll",
+        "lib/net45/Unity.Interception.Configuration.pdb",
+        "lib/net45/Unity.Interception.dll",
+        "lib/net45/Unity.Interception.pdb",
+        "lib/net45/Unity.RegistrationByConvention.dll",
+        "lib/net45/Unity.RegistrationByConvention.pdb",
+        "lib/net45/Unity.ServiceLocation.dll",
+        "lib/net45/Unity.ServiceLocation.pdb",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.pdb",
         "lib/net47/Unity.Abstractions.dll",
         "lib/net47/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Configuration.dll",
+        "lib/net47/Unity.Configuration.pdb",
         "lib/net47/Unity.Container.dll",
         "lib/net47/Unity.Container.pdb",
+        "lib/net47/Unity.Interception.Configuration.dll",
+        "lib/net47/Unity.Interception.Configuration.pdb",
+        "lib/net47/Unity.Interception.dll",
+        "lib/net47/Unity.Interception.pdb",
+        "lib/net47/Unity.RegistrationByConvention.dll",
+        "lib/net47/Unity.RegistrationByConvention.pdb",
+        "lib/net47/Unity.ServiceLocation.dll",
+        "lib/net47/Unity.ServiceLocation.pdb",
+        "lib/netcoreapp1.0/CommonServiceLocator.deps.json",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.deps.json",
         "lib/netcoreapp1.0/Unity.Abstractions.dll",
         "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Container.deps.json",
         "lib/netcoreapp1.0/Unity.Container.dll",
         "lib/netcoreapp1.0/Unity.Container.pdb",
-        "lib/netcoreapp2.0/Unity.Abstractions.dll",
-        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
-        "lib/netcoreapp2.0/Unity.Container.dll",
-        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.ServiceLocation.deps.json",
+        "lib/netcoreapp1.0/Unity.ServiceLocation.dll",
+        "lib/netcoreapp1.0/Unity.ServiceLocation.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.deps.json",
         "lib/netstandard1.0/Unity.Abstractions.dll",
         "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Container.deps.json",
         "lib/netstandard1.0/Unity.Container.dll",
         "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/CommonServiceLocator.deps.json",
+        "lib/netstandard2.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.deps.json",
         "lib/netstandard2.0/Unity.Abstractions.dll",
         "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Container.deps.json",
         "lib/netstandard2.0/Unity.Container.dll",
         "lib/netstandard2.0/Unity.Container.pdb",
-        "unity.5.11.1.nupkg.sha512",
+        "lib/netstandard2.0/Unity.ServiceLocation.deps.json",
+        "lib/netstandard2.0/Unity.ServiceLocation.dll",
+        "lib/netstandard2.0/Unity.ServiceLocation.pdb",
+        "unity.5.2.0.nupkg.sha512",
         "unity.nuspec"
       ]
     },
-    "Unity.Mvc5/1.4.0": {
-      "sha512": "So2uWlLPm3PQav2clWs2RGS7zn5ngBYvDQjciPT4kbY+MhxvInE+ug0dlLyK0/Jk3iBUkIkyWPHiL4qG4XiEbg==",
+    "Unity.Mvc5/1.3.0": {
+      "sha512": "TvZW4m6Kbj2gv9vtbOV60d5Thwmxjh0XPZtDygto4HX9HfU+/YpmsgmfhXdIsTfCvSiWvpZo/BiCtBgfHMzgdQ==",
       "type": "package",
-      "path": "unity.mvc5/1.4.0",
+      "path": "unity.mvc5/1.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10338,7 +10387,7 @@
         "Readme.txt",
         "content/App_Start/UnityConfig.cs.pp",
         "lib/net45/Unity.Mvc5.dll",
-        "unity.mvc5.1.4.0.nupkg.sha512",
+        "unity.mvc5.1.3.0.nupkg.sha512",
         "unity.mvc5.nuspec"
       ]
     }
@@ -10351,7 +10400,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
       "Microsoft.Extensions.Configuration >= 6.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
-      "Unity.Mvc5 >= 1.4.0"
+      "Unity.Mvc5 >= 1.3.0"
     ]
   },
   "packageFolders": {
@@ -10421,7 +10470,7 @@
           },
           "Unity.Mvc5": {
             "target": "Package",
-            "version": "[1.4.0, )"
+            "version": "[1.3.0, )"
           }
         },
         "imports": [
@@ -10452,7 +10501,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Mvc 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Mvc",
       "targetGraphs": [
         "net6.0"
@@ -10462,7 +10511,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         "net6.0"
@@ -10472,7 +10521,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         "net6.0"
@@ -10492,7 +10541,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Unity.Mvc5 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Unity.Mvc5 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Unity.Mvc5",
       "targetGraphs": [
         "net6.0"

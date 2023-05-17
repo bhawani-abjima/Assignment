@@ -7,8 +7,11 @@ namespace StudentsDetails.Models
 {
     public partial class StudentDetailsContext : DbContext
     {
+        private readonly IApplicationBuilder _applicationBuilder;   
+
         public StudentDetailsContext()
         {
+
         }
 
         public StudentDetailsContext(DbContextOptions<StudentDetailsContext> options)
@@ -16,8 +19,9 @@ namespace StudentsDetails.Models
         {
         }
 
-        public virtual DbSet<StudentDatum> StudentData { get; set; } = null!;
+        public virtual DbSet<StudentDetails> StudentData { get; set; } = null!;
         public object Students { get; internal set; }
+        public object StudentDetails { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,7 +29,7 @@ namespace StudentsDetails.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StudentDatum>(entity =>
+            modelBuilder.Entity<StudentDetails>(entity =>
             {
                 entity.Property(e => e.Address)
                     .HasMaxLength(50)

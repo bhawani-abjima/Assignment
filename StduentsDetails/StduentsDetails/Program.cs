@@ -1,8 +1,8 @@
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
+using StudentsDetails.Infrastructure;
 using StudentsDetails.Models;
-
-
+using StudentsDetails.Repo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-//builder.Services.AddTransient<IStudentRepo, StudentRepo>();
+builder.Services.AddTransient<IStudentRepo, StudentRepo>();
 
 builder.Services.AddDbContext<StudentDetailsContext>(options=> options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
 

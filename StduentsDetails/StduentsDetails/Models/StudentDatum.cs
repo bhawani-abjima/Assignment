@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StudentsDetails.Models
 {
-    public partial class StudentDatum
+    public partial class StudentDetails
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
