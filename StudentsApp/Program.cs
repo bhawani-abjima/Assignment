@@ -1,7 +1,9 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using StudentsApp.Infrastructure;
 using StudentsApp.Models;
 using StudentsApp.Profiles;
+using StudentsApp.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +13,15 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<StudentsDataContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("dbconn")));
 
+builder.Services.AddTransient<IStudentRepo, StudentRepo>();
+
 //var mappingconfig = new MapperConfiguration(options =>
 //{
 //    options.AddProfile(AutoMapperProfile);
 //});
 //IMapper mapper = mappingconfig.CreateMapper();
 //builder.Services.AddSingleton(mapper);
-builder.Services.AddMvc();
+//builder.Services.AddMvc();
 //builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 var app = builder.Build();

@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using StudentsApp.Infrastructure;
 using StudentsApp.Models;
 
 namespace StudentsApp.Controllers
@@ -14,17 +15,19 @@ namespace StudentsApp.Controllers
     {
         private readonly StudentsDataContext _context;
         private readonly IMapper _mapper;
+        private readonly IStudentRepo _repo;
 
-        public StudentsController(StudentsDataContext context, IMapper mapper)
+        public StudentsController(StudentsDataContext context, IMapper mapper, IStudentRepo Repo)
         {
             _context = context;
             _mapper = mapper;
+            _repo = Repo;
         }
 
         // GET: Students
         public async Task<IActionResult> Index()
         {
-            var student = await _context.Students.ToListAsync();
+            var student = await _repo.GetAll();
             var mappeditem = student.Select(x=> _mapper.Map<StudentDTO>(x));
             return View(mappeditem);
 
@@ -42,17 +45,19 @@ namespace StudentsApp.Controllers
             {
                 if (id == null || _context.Students == null)
                 {
-                    return NotFound();
+                    return NotFound(); 
                 }
 
-                var student = await _context.Students
-                    .FirstOrDefaultAsync(m => m.Id == id);
-                if (student == null)
+                var student = await _repo.GetByID(id);
+                    //.FirstOrDefaultAsync(m => m.Id == id);
+                var mappeditem = _mapper.Map<StudentDTO>(student); 
+
+                if (mappeditem == null)
                 {
                     return NotFound();
                 }
 
-                return View(student);
+                return View(mappeditem);
             }
             catch (Exception ex)
             {
