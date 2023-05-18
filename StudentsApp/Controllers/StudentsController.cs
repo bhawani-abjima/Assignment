@@ -62,7 +62,8 @@ namespace StudentsApp.Controllers
             catch (Exception ex)
             {
 
-                throw;
+                TempData["erroeMessage"] = ex.Message;
+                return View();
             }
         }
 
@@ -78,13 +79,23 @@ namespace StudentsApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,RollNo,FamilyName,Address,Contact")] Student student)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(student);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _context.Add(student);
+                    await _context.SaveChangesAsync();
+                    TempData["successMessage"] = "Student created successfully";
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(student);
             }
-            return View(student);
+            catch (Exception ex)
+            {
+
+                TempData["erroeMessage"] = ex.Message;
+                return View();
+            }
         }
 
         // GET: Students/Edit/5
