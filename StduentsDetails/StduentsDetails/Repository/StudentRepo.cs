@@ -1,4 +1,5 @@
-﻿using StudentsDetails.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentsDetails.Infrastructure;
 using StudentsDetails.Models;
 
 namespace StudentsDetails.Repo
@@ -12,14 +13,15 @@ namespace StudentsDetails.Repo
             _context = context;
         }
 
-        public List<StudentDetails> GetAll()
+        public async Task<List<StudentDatum>> GetAll()
         {
-            return _context.StudentDetails.ToList();
+            return await _context.StudentData.ToListAsync();
         }
 
-        public StudentDetails GetById(int id)
+        public StudentDatum GetById(int id)
         {
-            return _context.StudentDetails.FirstOrDefault(X=>X.Id == id);
+            return _context.StudentData.FirstOrDefault(X=>X.Id == id);
         }
+
     }
 }

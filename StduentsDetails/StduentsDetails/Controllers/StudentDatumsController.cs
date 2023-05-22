@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StudentsDetails.Entities;
+using StudentsDetails.Infrastructure;
 using StudentsDetails.Models;
+using StudentDetails = StudentsDetails.Entities.StudentDetails;
 
 namespace StudentsDetails.Controllers
 {
@@ -15,20 +17,20 @@ namespace StudentsDetails.Controllers
     {
         private readonly StudentDetailsContext _context;
         private readonly IMapper _mapper;
-        public StudentDatumsController(StudentDetailsContext context ,IMapper mapper)
+        private readonly IStudentRepo _repo;
+        public StudentDatumsController(StudentDetailsContext context ,IMapper mapper,IStudentRepo Repo)
         {
             _context = context;
             _mapper = mapper;   
+            _repo = Repo;
         }
 
         // GET: StudentDatums
         public async Task<IActionResult> Index()
         {
-            var student = await _context.StudentData.ToListAsync();
+            var student = await _repo.GetAll();
             var gk=student.Select(x=>_mapper.Map<StudentDetails>(x));
             return View(gk);
-
-
 
 
              // return _context.StudentData != null ? 
@@ -65,7 +67,7 @@ namespace StudentsDetails.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,RollNo,FamilyName,Address,Contact")] Models.StudentDetails studentDatum)
+        public async Task<IActionResult> Create([Bind("Id,Name,RollNo,FamilyName,Address,Contact")] Models.StudentDatum studentDatum)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +99,7 @@ namespace StudentsDetails.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,RollNo,FamilyName,Address,Contact")] Models.StudentDetails studentDatum)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,RollNo,FamilyName,Address,Contact")] Models.StudentDatum studentDatum)
         {
             if (id != studentDatum.Id)
             {

@@ -7,12 +7,11 @@ namespace StudentsDetails.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IStudentRepo _repo;
-        public HomeController(ILogger<HomeController> logger ,IStudentRepo Repo)
+        private readonly ILogger _logger;
+        public HomeController(ILogger<HomeController> logger )
         {
             _logger = logger;
-            _repo = Repo;
+           
         }
         public IActionResult Index()
         {

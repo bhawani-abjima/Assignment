@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using StudentsDetails.Controllers;
 
 namespace StudentsDetails.Models
 {
     public partial class StudentDetailsContext : DbContext
     {
-        private readonly IApplicationBuilder _applicationBuilder;   
+        private readonly IApplicationBuilder _applicationBuilder;
+        private readonly ILogger<HomeController> _logger;
 
         public StudentDetailsContext()
         {
@@ -19,7 +21,7 @@ namespace StudentsDetails.Models
         {
         }
 
-        public virtual DbSet<StudentDetails> StudentData { get; set; } = null!;
+        public virtual DbSet<StudentDatum> StudentData { get; set; } = null!;
         public object Students { get; internal set; }
         public object StudentDetails { get; internal set; }
 
@@ -29,7 +31,7 @@ namespace StudentsDetails.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StudentDetails>(entity =>
+            modelBuilder.Entity<StudentDatum>(entity =>
             {
                 entity.Property(e => e.Address)
                     .HasMaxLength(50)

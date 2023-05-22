@@ -5,8 +5,8 @@ namespace StudentsDetails.Infrastructure
 {
     public interface IStudentRepo
     {
-        List<StudentDetails> GetAll();
+        Task<List<StudentDatum>> GetAll();
         
-        StudentDetails GetById(int id);
+        StudentDatum GetById(int id);
     }
 }
