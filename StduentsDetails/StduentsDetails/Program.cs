@@ -12,7 +12,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IStudentRepo, StudentRepo>();
 
-builder.Services.AddDbContext<StudentDetailsContext>(options=> options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
+builder.Services.AddDbContext<StudentDataBaseContext>(options=> options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
