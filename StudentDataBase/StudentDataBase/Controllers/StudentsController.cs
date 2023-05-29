@@ -30,8 +30,8 @@ namespace StudentDataBase.Controllers
         public async Task<IActionResult> Index()
         {
             var student = await _repo.GetAll();
-            var gk = student.Select(x => _mapper.Map<StudentDetails>(x));
-            return View(gk);
+            var SS = student.Select(x => _mapper.Map<StudentDetails>(x));
+            return View(SS);
         }
 
         // GET: Students/Details/5
@@ -63,7 +63,7 @@ namespace StudentDataBase.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Roll_No,Name,Family_Name,Contact_No")] Student student)
+        public async Task<IActionResult> Create([Bind("Id,Roll_No,Name,Family_Name,Contact_No,Location")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace StudentDataBase.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Roll_No,Name,Family_Name,Contact_No")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Roll_No,Name,Family_Name,Contact_No,Location")] Student student)
         {
             if (id != student.Id)
             {
@@ -133,8 +133,7 @@ namespace StudentDataBase.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var student = await _context.Student.FirstOrDefaultAsync(m => m.Id == id);
             if (student == null)
             {
                 return NotFound();

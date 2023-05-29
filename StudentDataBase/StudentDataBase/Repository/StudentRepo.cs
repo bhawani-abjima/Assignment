@@ -29,8 +29,8 @@ namespace StudentDataBase.Repository
 
         public async Task<Student> GetById(int id)
         {
-            var student = await _context.Student.FirstOrDefaultAsync(X => X.Id == id);
-            return student;
+            var newStudent = await _context.Student.FirstOrDefaultAsync(X => X.Id == id);
+            return newStudent;
         }
     }
 }

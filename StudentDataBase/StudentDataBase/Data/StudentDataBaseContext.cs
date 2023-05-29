@@ -14,6 +14,11 @@ namespace StudentDataBase.Data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder Student)
+        {
+            Student.Entity<Student>().ToTable("StudentTable");
+        }
+
         public DbSet<StudentDataBase.Models.Student> Student { get; set; } = default!;
     }
 }

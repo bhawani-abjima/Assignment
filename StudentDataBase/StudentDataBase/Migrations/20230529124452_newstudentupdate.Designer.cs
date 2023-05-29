@@ -12,8 +12,8 @@ using StudentDataBase.Data;
 namespace StudentDataBase.Migrations
 {
     [DbContext(typeof(StudentDataBaseContext))]
-    [Migration("20230526070144_initdata")]
-    partial class initdata
+    [Migration("20230529124452_newstudentupdate")]
+    partial class newstudentupdate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,6 +40,10 @@ namespace StudentDataBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -49,7 +53,7 @@ namespace StudentDataBase.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Student");
+                    b.ToTable("StudentTable", (string)null);
                 });
 #pragma warning restore 612, 618
         }
