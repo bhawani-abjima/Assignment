@@ -34,6 +34,9 @@ namespace StudentDataBase.Migrations
                         .IsRequired()
                         .HasColumnType("bigint");
 
+                    b.Property<DateTime?>("Date_of_Birth")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Family_Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -51,7 +54,7 @@ namespace StudentDataBase.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("StudentTable", (string)null);
+                    b.ToTable("Student");
                 });
 #pragma warning restore 612, 618
         }
