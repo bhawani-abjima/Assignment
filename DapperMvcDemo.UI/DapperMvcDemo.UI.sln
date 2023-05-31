@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperMvcDemo.UI", "DapperMvcDemo.UI\DapperMvcDemo.UI.csproj", "{FECC1433-8541-484B-8D76-35AC1F72FF80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperMvcDemo.Data", "DapperMvcDemo.Data\DapperMvcDemo.Data.csproj", "{54B589C4-2B89-4230-8B16-B29BAD997A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FECC1433-8541-484B-8D76-35AC1F72FF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECC1433-8541-484B-8D76-35AC1F72FF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECC1433-8541-484B-8D76-35AC1F72FF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECC1433-8541-484B-8D76-35AC1F72FF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B589C4-2B89-4230-8B16-B29BAD997A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B589C4-2B89-4230-8B16-B29BAD997A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B589C4-2B89-4230-8B16-B29BAD997A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B589C4-2B89-4230-8B16-B29BAD997A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2F4769F-5974-4DC5-9B20-7316F6CC2820}
+	EndGlobalSection
+EndGlobal

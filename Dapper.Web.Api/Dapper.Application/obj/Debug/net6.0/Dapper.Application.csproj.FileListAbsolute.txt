@@ -1,0 +1,15 @@
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\bin\Debug\net6.0\Dapper.Application.deps.json
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\bin\Debug\net6.0\Dapper.Application.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\bin\Debug\net6.0\Dapper.Application.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\bin\Debug\net6.0\Dapper.Core.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\bin\Debug\net6.0\Dapper.Core.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.csproj.AssemblyReference.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.AssemblyInfoInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.AssemblyInfo.cs
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.csproj.CoreCompileInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.csproj.CopyComplete
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\refint\Dapper.Application.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\Dapper.Application.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Application\obj\Debug\net6.0\ref\Dapper.Application.dll

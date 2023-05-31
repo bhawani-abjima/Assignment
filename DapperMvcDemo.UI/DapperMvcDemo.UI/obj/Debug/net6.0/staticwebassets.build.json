@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "9aI33/QvG9B1k20UtwgQE02mFJ5vqV3rl9lVXYKBRF8=",
+  "Source": "DapperMvcDemo.UI",
+  "BasePath": "_content/DapperMvcDemo.UI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DapperMvcDemo.UI\\wwwroot",
+      "Source": "DapperMvcDemo.UI",
+      "ContentRoot": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\wwwroot\\",
+      "BasePath": "_content/DapperMvcDemo.UI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DapperMvcDemo.UI.styles.css",
+      "SourceId": "DapperMvcDemo.UI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/DapperMvcDemo.UI",
+      "RelativePath": "DapperMvcDemo.UI.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DapperMvcDemo.UI.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DapperMvcDemo.UI.bundle.scp.css",
+      "SourceId": "DapperMvcDemo.UI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/DapperMvcDemo.UI",
+      "RelativePath": "DapperMvcDemo.UI.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DapperMvcDemo.UI.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\wwwroot\\favicon.ico",
+      "SourceId": "DapperMvcDemo.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BhawaniSingh\\Documents\\GitHub\\Assignment\\DapperMvcDemo.UI\\DapperMvcDemo.UI\\wwwroot\\",
+      "BasePath": "_content/DapperMvcDemo.UI",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

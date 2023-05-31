@@ -1,0 +1,12 @@
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.csproj.AssemblyReference.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.AssemblyInfoInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.AssemblyInfo.cs
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.csproj.CoreCompileInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\bin\Debug\net6.0\DapperMvcDemo.Data.deps.json
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\bin\Debug\net6.0\DapperMvcDemo.Data.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\bin\Debug\net6.0\DapperMvcDemo.Data.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\refint\DapperMvcDemo.Data.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\DapperMvcDemo.Data.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\DapperMvcDemo.UI\DapperMvcDemo.Data\obj\Debug\net6.0\ref\DapperMvcDemo.Data.dll

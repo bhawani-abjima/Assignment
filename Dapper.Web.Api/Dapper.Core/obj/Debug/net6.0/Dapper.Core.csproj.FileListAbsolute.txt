@@ -1,0 +1,12 @@
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\bin\Debug\net6.0\Dapper.Core.deps.json
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\bin\Debug\net6.0\Dapper.Core.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\bin\Debug\net6.0\Dapper.Core.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.csproj.AssemblyReference.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.AssemblyInfoInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.AssemblyInfo.cs
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.csproj.CoreCompileInputs.cache
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\refint\Dapper.Core.dll
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\Dapper.Core.pdb
+C:\Users\BhawaniSingh\Documents\GitHub\Assignment\Dapper.Web.Api\Dapper.Core\obj\Debug\net6.0\ref\Dapper.Core.dll
